@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="./utilityFunction.js"></script>
+  </head>
+  <body>
+  <script type="text/javascript">
+    var _ = $.noConfict();
+    var $ = {
+      name: 'outer'
+    };
+
+    console.log('11', $.name);
+    _([1,2,3]).each(console.log);
+  </script>
+  </body>
+</html>
